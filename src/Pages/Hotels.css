@@ -1,0 +1,47 @@
+.hotels__page {
+    padding: 40px 20px;
+    text-align: center;
+    background: url('../assets/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.hotels__page h1 {
+    margin-bottom: 25px;
+    color: #333333;
+}
+.city__select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto 30px;
+}
+.city__select select {
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: 1px solid #CCCCCC;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.city__select select:hover {
+    background: #fff5cc;
+    border-color: #f1c40f;
+}
+.enter__city {
+    font-size: 1.4rem;
+    color: #333333;
+    font-weight: bold;
+}
+.hotels {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.loading__text {
+    font-size: 1.6rem;
+    color: #555555;
+}

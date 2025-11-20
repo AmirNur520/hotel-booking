@@ -1,0 +1,184 @@
+.hotel__card {
+    background: #f8f9fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.hotel__card:hover {
+    transform: translateY(-5px);
+}
+
+.hotel__card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.hotel__info {  
+    padding: 10px;
+}
+
+.card__text {
+    color: #000000;
+}
+
+.status.available {
+    color: #28a745;
+}
+
+.status.busy {
+    color: #dc3545;
+}
+
+.btn-toggle {
+    padding: 10px 15px;
+    background: #3b41f5;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-toggle:hover {
+    background: #1e23be;
+}
+
+.btn-toggle:active {
+    transform: scale(0.95);
+}
+
+.modal__block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 25px 35px;
+    text-align: center;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    animation: modal_block 0.4s ease-in;
+}
+@keyframes modal_block {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.modal__content h3 {
+    font-size: 1.3rem;
+}
+.modal__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.confirm-btn {
+    background: #27ec3b;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.confirm-btn:active {
+    transform: scale(0.95);
+}
+
+.cancel-btn {
+    background: #dc3545;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cancel-btn:active {
+    transform: scale(0.95);
+}
+
+.rating {
+    color: #ffb400;
+    font-size: 1.2rem;
+    min-height: 25px;
+}
+
+.price {
+    color: #1e23be;
+}
+
+@media screen and (max-width: 768px) {
+    .hotel__card {
+        width: 90%;
+        max-width: 400px;
+    }
+    .btn-toggle {
+        font-size: 1.2rem;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .modal__content {
+        padding: 20px 25px;
+        font-size: 1.1rem;
+    }
+    .confirm-btn {
+        font-size: 1rem;
+    }
+    .cancel-btn {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hotel__card {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+    }
+    .hotel__card img {
+        height: 180px;
+    }
+    .btn-toggle {
+        font-size: 1.1rem;
+    }
+     .modal__content {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+    .confirm-btn {
+        font-size: 0.9rem;
+    }
+    .cancel-btn {
+        font-size: 0.9rem;
+    }
+}

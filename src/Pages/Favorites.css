@@ -1,0 +1,57 @@
+.favorites__page {
+    padding: 40px 20px;
+    animation: fav_page 0.5s ease-in;
+    min-height: 100vh;
+}
+.favorites__page h1 {
+    text-align: center;
+    color: #14274A;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+.favorites__page h2 {
+    text-align: center;
+    color: #14274A;
+}
+@keyframes fav_page {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hotels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.btn-fav {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #37e32d;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+.btn-fav:hover {
+    background: #179a10;
+    transform: translateY(-2px);
+}
+.btn-fav:active {
+    transform: scale(0.95);
+}
+.btn-fav.active {
+    background: #f7baba;
+    color: #c20000;
+}
+.btn-fav.active:hover {
+    background: #ec4a4a;
+    color: #FFFFFF;
+}
